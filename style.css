@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background: #121212;
+    overflow-y: overlay;
+    color: #fff;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    position: fixed;
+    background: #121212;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.header[data-scroll="in"] {
+    padding: 10px 50px;
+    box-shadow: inset -2px -1px 3px rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    position: relative;
+}
+
+nav .bar {
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    margin-top: -10px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+nav .bar .close{
+    display: none;
+}
+nav .bar.active .open{
+    display: none;
+}
+nav .bar.active .close{
+    display: initial;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li:hover a {
+    color: rgba(0, 182, 182);
+}
+
+.home {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.home .text {
+    margin-top: 100px;
+}
+
+.home .text>span {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+.home .text h1 {
+    font-size: 70px;
+    line-height: 95px;
+    letter-spacing: 2px;
+    color: rgba(0, 182, 182);
+}
+
+.home .text h3 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+.home .text h3 span {
+    color: rgba(0, 182, 182);
+}
+
+
+section{
+   margin-right: 20px;
+   margin-top: 222px;
+}
+
+.projects {
+    background-color:#121212;
+    
+}
+
+.projects .content{
+    margin-top: 150px;
+    
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 400px;
+}
+
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
